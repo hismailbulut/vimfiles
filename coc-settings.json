@@ -1,0 +1,57 @@
+{
+    "languageserver": {
+        "godot": {
+            "host": "127.0.0.1",
+            "filetypes": [
+                "gdscript3"
+            ],
+            "port": 6008
+        }
+    },
+    "suggest.removeDuplicateItems": true,
+    "suggest.completionItemKindLabels": {
+        "method": "  ",
+        "function": "  ",
+        "variable": "[]",
+        "field": "  ",
+        "typeParameter": "<>",
+        "constant": "  ",
+        "class": " פּ ",
+        "interface": " 蘒",
+        "struct": "  ",
+        "event": "  ",
+        "operator": "  ",
+        "module": "  ",
+        "property": "  ",
+        "enum": " 練",
+        "reference": "  ",
+        "keyword": "  ",
+        "file": "  ",
+        "folder": " ﱮ ",
+        "color": "  ",
+        "unit": " 塞 ",
+        "snippet": "  ",
+        "text": "  ",
+        "constructor": "  ",
+        "value": "  ",
+        "enumMember": "  "
+    },
+    "clangd.path": "C:\\Users\\bulut\\AppData\\Local\\coc\\extensions\\coc-clangd-data\\install\\11.0.0\\clangd_11.0.0\\bin\\clangd.exe",
+    "clangd.arguments": [
+        "--enable-config",
+        "--cross-file-rename",
+        "--debug-origin"
+    ],
+    "coc.preferences.formatOnSaveFiletypes": [
+        "javascript",
+        "cmake",
+        "html",
+        "json",
+        "rust",
+        "cpp",
+        "css",
+        "go",
+        "c"
+    ],
+    "html.autoClosingTags": true
+}
