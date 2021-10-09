@@ -18,7 +18,8 @@ if has('nvim')
         inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>
         vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv
     else " other neovim gui
-        set guifont=Consolas:h14
+        echo "other neovim gui"
+        set guifont=Cascadia\ Code:h13
     endif
 else " gvim
     set guifont=Consolas:h11

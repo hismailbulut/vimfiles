@@ -52,10 +52,15 @@ execute 'source ' . vimfilesPath . '/plug-config/startify.vim'
 
 let g:translator_target_lang='tr'
 
-" colorschemes
-" let g:gruvbox_contrast_dark = 'hard'
-" colorscheme gruvbox
+" themes and its options separated with new line
+
+let g:gruvbox_contrast_dark = 'hard'
+colorscheme gruvbox
+
 " colorscheme srcery
-colorscheme PaperColor
-" let ayucolor="dark" " dark,light,mirage
+
+" set background=light " dark, light
+" colorscheme PaperColor
+
+" let ayucolor="light" " dark, light, mirage
 " colorscheme ayu
