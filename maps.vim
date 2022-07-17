@@ -47,7 +47,8 @@ vnoremap <silent> <A-Up> :m '<-2<CR>gv=gv
 vnoremap <silent> <A-Down> :m '>+1<CR>gv=gv
 
 " delete this buffer
-nnoremap <silent> <localleader>bd :BufClose<cr>:silent tabclose<cr>gT
+nnoremap <silent> <localleader>bd :DeleteBuffer<cr>
+" :silent tabclose<cr>gT
 " delete all buffers and close vim
 nnoremap <localleader>ba :bufdo <leader>bd<cr>
 " delete all other buffers but keep this one
@@ -66,12 +67,14 @@ nnoremap <localleader>th :tabprev<cr>
 " edit file in new tab
 nnoremap <localleader>te :tabedit <C-r>=expand("%:p:h")<cr>\
 
-nnoremap <localleader>ve :vsplit .\
-nnoremap <localleader>he :split .\
-" double ESC exits insert mode in terminal
+" edit file in vertical or horizontal split
+nnoremap <localleader>ve :vsplit <C-r>=expand("%:p:h")<cr>\
+nnoremap <localleader>he :split <C-r>=expand("%:p:h")<cr>\
+
 if has('nvim')
     nnoremap <localleader>vt :vsplit<cr>:term<cr>i
     nnoremap <localleader>ht :split<cr>:term<cr>:resize 14<cr>i
+    " double ESC exits insert mode in terminal
     tnoremap <Esc><Esc> <C-\><C-n>
 else
     nnoremap <localleader>vt :vert term ++close<cr>
@@ -92,4 +95,10 @@ if has('win32')
     vnoremap <localleader>sb "hy:<C-u>silent ! start "" "https://www.google.com/search?q=<C-r>h"<cr>
     " open current buffers directory in system explorer (windows only)
     nnoremap <silent> <localleader>e :silent !start explorer %:p:h<CR>
+else
+    " search symbol in google (windows only)
+    nnoremap <silent> <localleader>sb :echo "This feature only supported in windows"<cr>
+    vnoremap <localleader>sb :echo "This feature only supported in windows"<cr>
+    " open current buffers directory in system explorer (windows only)
+    nnoremap <silent> <localleader>e :echo "This feature only supported in windows"<cr>
 endif

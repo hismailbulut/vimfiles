@@ -30,6 +30,11 @@ if !exists('pluginsLoaded')
     Plug 'tpope/vim-fugitive'
     " translator
     Plug 'voldikss/vim-translator'
+    " cheatsheet
+    Plug 'RishabhRD/popfix'
+    Plug 'RishabhRD/nvim-cheat.sh'
+    " copilot
+    Plug 'github/copilot.vim'
     " nerdfont icons
     Plug 'ryanoasis/vim-devicons' " this plugin must loaded last
     " colorschemes
@@ -37,6 +42,8 @@ if !exists('pluginsLoaded')
     Plug 'NLKNguyen/papercolor-theme'
     Plug 'srcery-colors/srcery-vim'
     Plug 'ayu-theme/ayu-vim'
+    Plug 'altercation/vim-colors-solarized'
+    Plug 'sonph/onehalf', { 'rtp': 'vim' }
     call plug#end()
     let pluginsLoaded=1
 endif
@@ -52,15 +59,22 @@ execute 'source ' . vimfilesPath . '/plug-config/startify.vim'
 
 let g:translator_target_lang='tr'
 
-" themes and its options separated with new line
-
-let g:gruvbox_contrast_dark = 'hard'
-colorscheme gruvbox
-
+" Themes and its options separated with new line (enable only one at a time)
+" ----------------------------------------------
+" let g:gruvbox_contrast_dark = 'hard'
+" colorscheme gruvbox
+" ----------------------------------------------
 " colorscheme srcery
-
-" set background=light " dark, light
+" ----------------------------------------------
+" set background=dark " dark, light
 " colorscheme PaperColor
-
-" let ayucolor="light" " dark, light, mirage
-" colorscheme ayu
+" ----------------------------------------------
+let ayucolor="dark" " dark, light, mirage
+colorscheme ayu
+" ----------------------------------------------
+" set background=light " dark, light
+" colorscheme solarized
+" ----------------------------------------------
+" colorscheme onehalfdark " ~light or ~dark
+" let g:airline_theme='onehalfdark'
+" ----------------------------------------------

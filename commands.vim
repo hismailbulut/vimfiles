@@ -1,4 +1,4 @@
-command! BufClose call FnDeleteBuffer()
+command! DeleteBuffer call FnDeleteBuffer()
 
 command! Q :q
 command! Qa :qa
@@ -6,8 +6,6 @@ command! W :w
 command! Wa :wa
 command! Wq :wq
 command! Wqa :wqa
-
-command! REvimrc :execute 'source ' . vimfilesPath . '/init.vim'
 
 command -bar -nargs=? ShowSpaces call FnShowSpaces(<args>)
 command -bar -nargs=0 -range=% TrimSpaces <line1>,<line2>call FnTrimSpaces()

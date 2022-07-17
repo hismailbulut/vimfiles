@@ -8,10 +8,10 @@ function! FnDeleteBuffer()
         bnext
     endif
     if bufnr("%") == l:currentBufNum
-        new
+      new
     endif
     if buflisted(l:currentBufNum)
-        execute("bdelete! ".l:currentBufNum)
+      execute("bdelete! ".l:currentBufNum)
     endif
 endfunction
 

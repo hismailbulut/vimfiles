@@ -18,6 +18,7 @@ if has('nvim')
         inoremap <silent><RightMouse> <Esc>:call GuiShowContextMenu()<CR>
         vnoremap <silent><RightMouse> :call GuiShowContextMenu()<CR>gv
     else " other neovim gui
+        " not all gui clients loads ginit.vim
         echo "other neovim gui"
         set guifont=Cascadia\ Code:h13
     endif

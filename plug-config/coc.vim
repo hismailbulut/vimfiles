@@ -3,8 +3,8 @@ let g:coc_global_extensions = [
     \ "coc-json",
     \ ]
 
-let g:coc_snippet_next = '<Tab>'
-let g:coc_snippet_prev = '<S-Tab>'
+" let g:coc_snippet_next = '<Tab>'
+" let g:coc_snippet_prev = '<S-Tab>'
 
 " GoTo code navigation.
 nmap <silent> <leader>gd <Plug>(coc-definition)

@@ -18,7 +18,7 @@ nnoremap <silent> <leader>nh :cd $HOME<CR>:silent NERDTreeCWD<CR>
 " open nerdtree in current buffer directory
 nnoremap <silent> <leader>nc :cd %:p:h<CR>:silent NERDTreeCWD<CR>
 " open custom projects folder
-nnoremap <silent> <leader>np :cd C:/ismailbulut/Developer<CR>:silent NERDTreeCWD<CR>
+nnoremap <silent> <leader>np :cd C:/ismailbulut/Projeler<CR>:silent NERDTreeCWD<CR>
 " open vimfiles folder
 nnoremap <silent> <leader>nv :cd $HOME/vimfiles<CR>:silent NERDTreeCWD<CR>
 

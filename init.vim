@@ -17,22 +17,19 @@ execute 'source ' . vimfilesPath . '/commands.vim'
 execute 'source ' . vimfilesPath . '/plugins.vim'
 
 if exists('g:neoray')
-    set guifont=:h10.5
+    set guifont=:h13
     set guicursor+=a:blinkwait1000-blinkon500-blinkoff250-Cursor
 
-    NeoraySet CursorAnimTime  0.08
+    NeoraySet CursorAnimTime  0.1
     NeoraySet Transparency    0.975
     NeoraySet TargetTPS       90
-    NeoraySet ContextMenuOn   TRUE
-    NeoraySet BoxDrawingOn    TRUE
-    NeoraySet WindowSize      100x40
+    NeoraySet ContextMenuOn   true
+    NeoraySet BoxDrawingOn    true
+    NeoraySet WindowSize      110x40
     NeoraySet WindowState     centered
-
     " NeoraySet KeyFullscreen <M-C-CR>
     " NeoraySet KeyZoomIn     <C-ScrollWheelUp>
     " NeoraySet KeyZoomOut    <C-ScrollWheelDown>
-
-    NeoraySet ContextButton   --------- :
-    NeoraySet ContextButton   Translate :'<,'>Translate
-    NeoraySet ContextButton   Hello     :echo\ "Hello\ Ismail!"
+    NeoraySet ContextButton   ShowHLGroup :call\ FnShowHLGroup()
+    NeoraySet ContextButton   Translate   :Translate
 endif

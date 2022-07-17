@@ -80,8 +80,10 @@ let g:which_key_localleader_map.s.b = 'search (selected) symbol in google'
 " splits
 let g:which_key_localleader_map.v = {'name': '+vertical'}
 let g:which_key_localleader_map.v.e = 'edit file in cwd'
+let g:which_key_localleader_map.v.t = 'open terminal in vertical split'
 let g:which_key_localleader_map.h = {'name': '+horizontal'}
 let g:which_key_localleader_map.h.e = 'edit file in cwd'
+let g:which_key_localleader_map.h.t = 'open terminal in horizontal split'
 
 call which_key#register('<Space>', "g:which_key_leader_map")
 call which_key#register(',', "g:which_key_localleader_map")
