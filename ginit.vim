@@ -9,7 +9,7 @@
 
 if has('nvim')
     if exists("GuiLoaded") " neovim-qt
-        GuiFont! Consolas:h11
+        GuiFont! Consolas:h13
         GuiTabline 0
         GuiPopupmenu 0
         GuiScrollBar 0
