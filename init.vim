@@ -12,16 +12,16 @@ endif
 
 " nvim opened in vscode extension, dont load user config
 " because it may broke the vscode
-if exists('g:vscode') 
-    execute 'source ' . vimfilesPath . '/vscode.vim'
+if exists('g:vscode')
+    execute 'source ' . vimfilesPath . '/vim-config/vscode.vim'
     finish
 endif
 
-execute 'source ' . vimfilesPath . '/sets.vim'
-execute 'source ' . vimfilesPath . '/funcs.vim'
-execute 'source ' . vimfilesPath . '/maps.vim'
-execute 'source ' . vimfilesPath . '/commands.vim'
-execute 'source ' . vimfilesPath . '/plugins.vim'
+execute 'source ' . vimfilesPath . '/vim-config/options.vim'
+execute 'source ' . vimfilesPath . '/vim-config/funcs.vim'
+execute 'source ' . vimfilesPath . '/vim-config/keymaps.vim'
+execute 'source ' . vimfilesPath . '/vim-config/commands.vim'
+execute 'source ' . vimfilesPath . '/vim-config/plugins.vim'
 
 if exists('g:neoray') " neoray settings
     set guifont=:h13

@@ -1,5 +1,5 @@
-let g:floaterm_width=0.8
-let g:floaterm_height=0.8
+let g:floaterm_width=0.85
+let g:floaterm_height=0.85
 " always close floaterm window when terminal exits
 let g:floaterm_autoclose=2
 
@@ -7,7 +7,7 @@ let g:floaterm_wintype='float'
 let g:floaterm_position='center'
 
 if has('nvim')
-    let g:floaterm_borderchars=''
+    " let g:floaterm_borderchars=''
 endif
 
 nnoremap <silent> <F5> :FloatermToggle<CR>

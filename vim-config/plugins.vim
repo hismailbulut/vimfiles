@@ -1,5 +1,4 @@
-" This check is for avoiding loading plugins more than once when init.vim
-" resourced.
+" This check is for avoiding loading plugins more than once when init.vim resourced
 if !exists('pluginsLoaded')
     call plug#begin(vimfilesPath . '/plug-cache')
     " filetree
@@ -24,15 +23,10 @@ if !exists('pluginsLoaded')
     Plug 'mhinz/vim-startify'
     " create lorem ipsum
     Plug 'vim-scripts/loremipsum'
-    " best syntax and indentation support
+    " better syntax and indentation support
     Plug 'sheerun/vim-polyglot'
-    " git integration
-    Plug 'tpope/vim-fugitive'
     " translator
     Plug 'voldikss/vim-translator'
-    " cheatsheet
-    Plug 'RishabhRD/popfix'
-    Plug 'RishabhRD/nvim-cheat.sh'
     " copilot
     Plug 'github/copilot.vim'
     " nerdfont icons
